@@ -1,0 +1,46 @@
+{
+  "name": "vue-cli-m",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --report",
+    "build:test": "vue-cli-service build --mode development",
+    "lint": "vue-cli-service lint",
+    "precommit": "npm run lint",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "@types/js-cookie": "^2.2.2",
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "moment": "^2.24.0",
+    "qs": "^6.7.0",
+    "table": "^5.4.0",
+    "vue": "^2.6.10",
+    "vue-js-cookie": "^2.1.0",
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.1",
+    "vx-easyui": "^1.1.19",
+    "yarn-install": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^2.3.0",
+    "node-sass": "^4.12.0",
+    "postcss-import": "^12.0.1",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-url": "^8.0.0",
+    "sass-loader": "^7.1.0",
+    "svg-sprite-loader": "^4.1.6",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "gitHooks": {
+    "pre-commit": "npm run lint"
+  }
+}
